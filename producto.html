@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./servicios.css">
+    <link rel="stylesheet" href="./producto.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/851a3c2fc1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <nav>
+        <div class="logo-section">
+            <img class="logo-img" src="./media/logo.png" alt="logo">
+            <h1 class="company-name">SM CONTENEDORES</h1>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item" id="inicio"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item" id="servicios"><a class="nav-link" href="servicios.html">Servicio</a></li>
+            <li class="nav-item" id="nosotros"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <div class="views-container">
+        <form class="form-box" action="">
+            <h3>SOLICITUD DE CONTRATO</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <label for="nombre">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <label for="nombre">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Telefono:</label>
+            <input type="phone" name="telefono" id="phone" required>
+            <label for="address">Direccion:</label>
+            <input type="text" name="direccion" id="address" required>
+            <label for="streets">Entre calles:</label>
+            <input type="text" name="entreCalles" id="streets" required>
+            <label for="plan-input">Plan:</label>
+            <select name="plan" id="plan-input" placeholder="plan">
+                <option value="abono sec 4" >Abono Sec 4</option>
+                <option value="abono sec 8">Abono Sec 8</option>
+                <option value="abono sec 12" selected>Abono Sec 12</option>
+            </select>
+            <input class="send" type="submit" value="Enviar">
+            <input type="hidden" name="producto" disabled> <!-- sirve para identificar se accede mediante form.id-->
+        </form>
+        <!-- <div class="container">
+            <img src="./media/loader.svg" alt="">
+            <p>Cargando</p>
+        </div> -->
+    </div>
+    <footer>
+        <div class="extra">
+            <div class="social-media">
+                <h4>Seguinos en nuestras redes</h4>
+                <a href="page not found"><i id="facebook" class="redes fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/smcontenedores.tuc/" target="_blank"><i id="instagram" class="redes fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">© 2021 SM Contenedores</div>
+        </div>
+    </footer>
+    <template>
+        <div class="container">
+            <img src="">
+            <p></p>
+        </div>
+    </template>
+    <script type="module" src="./products.js"></script>
+    <!-- <div class="container"><img src="./media/loader.svg"></div> -->
+</body>
+</html>

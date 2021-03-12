@@ -1,0 +1,36 @@
+
+/* Navegacion */
+#inicio{
+    border-bottom: none;
+}
+
+#servicios{
+    border-bottom: none;
+}
+
+#nosotros{
+    border-bottom: 2px solid white;
+}
+/*fin de navegacion*/
+
+
+.section-introduction{
+    margin-top: 100px;
+}
+
+
+.num-platform{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 40px;
+    
+}
+
+i{
+    padding: 20px;
+}
+
+
