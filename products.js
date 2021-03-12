@@ -19,7 +19,7 @@ $viewsContainer = document.querySelector('.views-container')
 const addData = async (options) => {
     try{
         $form.remove()
-        document.body.insertAdjacentHTML('beforeend', '<div class="container"><img src="./media/loader.svg"></div>')
+        document.body.insertAdjacentHTML('beforeend', '<div class="container"><img src="./loader.svg"></div>')
         
         let response = await fetch('http://localhost:3000/solicitudes', {
             method: 'POST',
@@ -34,7 +34,7 @@ const addData = async (options) => {
         }
         document.body.removeChild(document.body.lastChild)
         document.body.insertAdjacentHTML('beforeend', '<div class="container"><i class="success-icon far fa-check-circle"></i><p class="response">SOLICITUD ENVIADA</p></div>')
-        location.replace('http://127.0.0.1:5500/SMContenedores/index.html')
+        location.replace('./index.html')
     }catch(err){
         document.body.removeChild(document.body.lastChild)
         document.body.insertAdjacentHTML('beforeend', `<div class="container"><i class="error-icon fas fa-times"></i><p class="response">Ocurrio un error: ${err.status} Servidor no disponible</p></div>`)
